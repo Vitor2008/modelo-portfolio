@@ -18,11 +18,29 @@ nav ul li{
     margin: 5px 20px;
     font-size: 20px;
     font-weight: 500;
+    position: relative;
 }
 
-nav ul li:hover{
-    color: var(--color-primary);
+
+.menu-link{
+    padding: 0.5rem 0;
 }
+
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(3, 150, 214, 1) 81%, rgba(2,245,255,1) 100.2% );
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after{
+    width: 90%;
+}
+
 
 .logo {
     display: flex;
@@ -49,6 +67,10 @@ nav ul li:hover{
     font-size: 30px;
     color: var(--color-primary);
 }
+
+
+
+
 
 @media (max-width: 1000px){
     

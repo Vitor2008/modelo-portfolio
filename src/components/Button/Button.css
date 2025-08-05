@@ -63,13 +63,13 @@
 
 button:active {
   transform: scale(0.9) rotate(3deg);
-  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(113, 73, 245, 1) 83%, rgba(2,245,255,1) 100.2% );
   transition: 0.5s;
 }
 
 
 button:hover {
-  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(113, 73, 245, 1) 83%, rgba(2,245,255,1) 100.2% );
   transition: 0.5s;
 }
 
