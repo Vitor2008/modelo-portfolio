@@ -41,7 +41,7 @@ const Home = () => {
             </Link>
         </div>
         <div className='home-img wow fadeInRight'>
-            <img src={img_banner} alt='banner-portfolio' />
+            <img src={img_banner} alt='banner portfolio' />
         </div>
     </section>
     )
