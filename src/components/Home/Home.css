@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 40px;
 }
 
 .home-content h3{
@@ -27,6 +26,7 @@ span{
 
 .home-content p{
     font-size: 1.5rem;
+    color: var(--color-text);
 }
 
 .social-media a{

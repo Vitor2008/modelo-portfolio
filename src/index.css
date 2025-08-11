@@ -18,6 +18,7 @@ body{
 
 :root {
   --color-primary: blue;
+  --color-text: #e0e0e0;
 }
 
 
@@ -33,5 +34,11 @@ a{
     padding-right: 10%;
 }
 
+.back-black{
+    background: black;
+}
 
+.title.color-blue p{
+  color: var(--color-primary);
+}
 

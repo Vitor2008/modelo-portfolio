@@ -4,11 +4,12 @@ import './Title.css'
 interface TitleProps {
   subTitle: string;
   title: string;
+  classColor: string;
 }
 
-const Title: React.FC<TitleProps> = ({subTitle, title}) => {
+const Title: React.FC<TitleProps> = ({subTitle, title, classColor}) => {
   return (
-    <div className='title'>
+    <div className={`title ${classColor}`}>
       <p>{subTitle}</p>
       <h2>{title}</h2>
     </div>
