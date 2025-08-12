@@ -10,7 +10,7 @@ const About = () => {
             <div className='about-content'>
                 <h3>SOBRE MIM</h3>
                 <h2>Desenvolvedor FullStack</h2>
-                <p>Sou um desenvolvedor Full-Stack com experiência em tecnologias modernas e um perfil 
+                <p>Sou um desenvolvedor FullStack com experiência em tecnologias modernas e um perfil 
                 voltado à criação de soluções eficientes, escaláveis e centradas no usuário.</p>
                 <p>Atuo com foco em desenvolvimento web, criando soluções escaláveis e sustentáveis, 
                 com atenção especial à arquitetura de sistemas e à construção de APIs robustas e bem estruturadas.</p>
