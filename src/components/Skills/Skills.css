@@ -1,5 +1,6 @@
 .skills{
     color: white;
+    margin: 100px 0;
 }
 
 .skills-container {
@@ -21,16 +22,16 @@
     width: 40%;
 }
 
-.skills-bars-item{
-    display: flex;
-    width: 100%;
-    gap: 30px;
+.skills-tech {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .skills-tech,
 .skills-data-base{
     width: 100%;
-}
+} 
 
 
 .skill-circe-container{
@@ -48,5 +49,6 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 
