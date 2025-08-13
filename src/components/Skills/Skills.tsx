@@ -18,7 +18,9 @@ const Skills = () => {
         <div className='skills-container'>
           
           <div className='skills-bars'>
-            <h1>Técnica</h1>
+             <div className='title-skills'>
+               <h1>Técnica</h1>
+             </div>
             <div className='skills-tech'>
                 <div className='skills-bars-item'>
                   <img className='img-logo dotnet' src={dotnet_img} width={30}/><ProgressBar skill=".NET" percentage={85} /> 
@@ -33,7 +35,7 @@ const Skills = () => {
                   <img className='img-logo' src={react_img} width={30}/><ProgressBar skill="React" percentage={85} /> 
                 </div>
                 <div className='skills-bars-item'>
-                  <img className='img-logo' src={node_img} width={45}/><ProgressBar skill="Node.js" percentage={85} /> 
+                  <img className='img-logo' src={node_img} width={30}/><ProgressBar skill="Node.js" percentage={85} /> 
                 </div>
                 <div className='skills-bars-item'>
                   <img className='img-logo' src={mySql_img} width={30}/><ProgressBar skill="MySQL" percentage={85} /> 
@@ -48,7 +50,9 @@ const Skills = () => {
           </div>
 
           <div className='skill-circe'>
-            <h1>Comportamentais</h1>
+            <div className='title-skills'>
+               <h1>Comportamentais</h1>
+             </div>
             <div className='skill-circe-container'>
               <div className='skill-circe-item'>
                 <CircularProgressBar skill="" percentage={65} />
