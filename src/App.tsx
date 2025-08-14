@@ -4,29 +4,34 @@ import Title from "./components/Title/Title"
 import About from "./components/About/About"
 import Skills from "./components/Skills/Skills"
 import Services from "./components/Services/Services"
+import Projects from "./components/Projects/Projects"
 
 function App() {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="site-container">
-        <Home/>
+        <Home />
       </div>
       <div className="back-black">
         <div className="site-container">
-          <About/>
+          <About />
         </div>
       </div>
       <div className="site-container">
         <Title subTitle="Skills" title="Minhas Skills" classColor=""></Title>
-        <Skills/>
+        <Skills />
       </div>
       <div className="back-black">
         <div className="site-container">
           <Title subTitle="Serviços" title="Minhas Especialidades" classColor=""></Title>
-          <Services/>
+          <Services />
         </div>
+      </div>
+      <div className="site-container">
+        <Title subTitle="Projetos" title="Projetos em Destaque" classColor=""></Title>
+        <Projects />
       </div>
     </div>
   )
