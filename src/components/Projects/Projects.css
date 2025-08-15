@@ -195,3 +195,7 @@
 .footer-project .button {
     font-size: 12px;
 }
+
+.icon-content img{
+    border-radius: 50%;
+}

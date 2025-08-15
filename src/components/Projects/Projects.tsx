@@ -1,14 +1,14 @@
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import Button from '../Button/Button'
 
 const Projects = () => {
     return (
         <div className='projects'>
             <div className="container-projects">
-                
+
                 <div className="img-port site1">
                     <div className="overlay">
                         <h1 className="title-project">
