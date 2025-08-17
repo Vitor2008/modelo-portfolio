@@ -5,6 +5,7 @@ import About from "./components/About/About"
 import Skills from "./components/Skills/Skills"
 import Services from "./components/Services/Services"
 import Projects from "./components/Projects/Projects"
+import Contact from "./components/Contact/Contact"
 
 function App() {
 
@@ -32,6 +33,12 @@ function App() {
       <div className="site-container">
         <Title subTitle="Projetos" title="Projetos em Destaque" classColor=""></Title>
         <Projects />
+      </div>
+      <div className="back-black">
+        <div className="site-container">
+          <Title subTitle="Contato" title="Entre em Contato" classColor=""></Title>
+          <Contact />
+        </div>
       </div>
     </div>
   )
