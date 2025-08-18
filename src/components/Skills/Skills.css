@@ -75,5 +75,32 @@
     align-items: center;
 }
 
+@media (max-width: 748px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .skills-bars,
+    .skill-circe{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .skills-bars-item img{
+        width: 25px;
+    }
+
+    .mobile-top{
+        margin-top: 6px;
+    }
+
+    .skill-circe-item p{
+        font-size: 12px;
+    }
+}
 
 

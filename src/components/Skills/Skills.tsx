@@ -20,7 +20,7 @@ const Skills = () => {
             <h1>Técnica</h1>
           </div>
           <div className='skills-tech'>
-            <div className='skills-bars-item'>
+            <div className='skills-bars-item mobile-top'>
               <img className='img-logo dotnet' src={dotnet_img} width={30} /><ProgressBar skill=".NET" percentage={85} />
             </div>
             <div className='skills-bars-item'>

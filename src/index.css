@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 
-body{
+body {
   background: #020024;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 
-a{
+a {
   text-decoration: none;
   color: inherit;
   line-height: 1;
@@ -27,15 +27,22 @@ a{
 }
 
 .site-container {
-    padding-left: 10%;
-    padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.back-black{
-    background: black;
+.back-black {
+  background: black;
 }
 
-.title.color-blue p{
+.title.color-blue p {
   color: var(--color-primary);
 }
 
+
+@media (max-width: 748px) {
+  .site-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

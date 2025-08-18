@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 
-.skill-info span{
+.skill-info span {
   color: white;
 }
 
@@ -25,4 +25,11 @@
   height: 100%;
   transition: width 0.5s ease-in-out;
   box-shadow: 0 0 20px #ffffff38;
+}
+
+
+@media (max-width: 400px) {
+  .skill-info span {
+    font-size: 0.8rem;
+  }
 }
