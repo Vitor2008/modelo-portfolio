@@ -1,3 +1,4 @@
+import 'animate.css'
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home/Home"
 import Title from "./components/Title/Title"
@@ -6,6 +7,7 @@ import Skills from "./components/Skills/Skills"
 import Services from "./components/Services/Services"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -39,6 +41,9 @@ function App() {
           <Title subTitle="Contato" title="Entre em Contato" classColor=""></Title>
           <Contact />
         </div>
+      </div>
+      <div className="site-container">
+        <Footer />
       </div>
     </div>
   )

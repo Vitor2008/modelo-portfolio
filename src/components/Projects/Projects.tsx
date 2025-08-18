@@ -8,7 +8,7 @@ import Button from '../Button/Button'
 const Projects = () => {
     return (
         <div className='projects'>
-            <div className="container-projects">
+            <div className="container-projects animate__animated animate__fadeIn">
 
                 <div className="img-port site1">
                     <div className="overlay">

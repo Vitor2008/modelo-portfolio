@@ -30,13 +30,13 @@ const Navbar = () => {
             </div>
             <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
                 <li><Link className='menu-link' to='home' smooth={true} offset={-160} duration={500}>Home</Link></li>
-                <li><Link className='menu-link' to='about' smooth={true} offset={-160} duration={500}>Sobre</Link></li>
-                <li><Link className='menu-link' to='skills' smooth={true} offset={-160} duration={500}>Skills</Link></li>
+                <li><Link className='menu-link' to='about' smooth={true} offset={-100} duration={500}>Sobre</Link></li>
+                <li><Link className='menu-link' to='skills' smooth={true} offset={-260} duration={500}>Skills</Link></li>
                 <li><Link className='menu-link' to='services' smooth={true} offset={-260} duration={500}>Serviços</Link></li>
                 <li><Link className='menu-link' to='projects' smooth={true} offset={-260} duration={500}>Projetos</Link></li>
                 <li>
                     <Link to='contact' smooth={true} offset={-260} duration={500}>
-                       <Button text='Contato'></Button>
+                        <Button text='Contato'></Button>
                     </Link>
                 </li>
             </ul>

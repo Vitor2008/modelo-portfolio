@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 
 const Services = () => {
   return (
-    <div className='services'>
+    <div className='services animate__animated animate__fadeIn'>
       <div className="card">
         <div className="card-content">
           <div className='card-header'>
