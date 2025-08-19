@@ -1,9 +1,39 @@
+import React, { useRef } from 'react'
 import './Contact.css'
 import Button from '../Button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
+
+    const formRef = useRef<HTMLFormElement>(null);
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        setResult("Enviando....");
+        const formData = new FormData(event.currentTarget);
+
+        // formData.append("access_key", `${config.token.webForms}`);
+        formData.append("access_key", '');
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            console.log("Resetando o formulário...");
+            setResult("Enviado com sucesso!");
+            formRef.current?.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
     return (
         <div className='contact'>
             <div className='contact-info animate__animated animate__fadeIn'>
@@ -16,39 +46,40 @@ const Contact = () => {
             </div>
 
             <div className='form-container animate__animated animate__fadeIn'>
-                <form className="form">
+                <form ref={formRef} onSubmit={onSubmit} className="form">
                     <p className="title-contact">Mensagem </p>
                     <p className="message">Envie uma mensagem.</p>
 
                     <label>
-                        <input className="input" type="text" required></input>
+                        <input className="input" type="text" name="title" required></input>
                         <span>Título</span>
                     </label>
 
                     <div className="flex">
                         <label>
-                            <input className="input" type="text" placeholder="" required></input>
+                            <input className="input" type="text" name='name' placeholder="" required></input>
                             <span>Nome</span>
                         </label>
 
                         <label>
-                            <input className="input" type="text" placeholder="" required></input>
-                            <span>Sobrenome</span>
+                            <input className="input" type="tel" name='phone' placeholder="" required></input>
+                            <span>Telefone</span>
                         </label>
                     </div>
 
                     <label>
-                        <input className="input" type="email" placeholder="" required></input>
+                        <input className="input" type="email" name='email' placeholder="" required></input>
                         <span>Email</span>
                     </label>
 
                     <label>
-                        <textarea rows={5} className="input" placeholder="" required></textarea>
+                        <textarea name='message' rows={5} className="input" placeholder="" required></textarea>
                         <span>Sua Mensagem...</span>
                     </label>
-
-                    <Button text='Enviar'></Button>
+                    <Button text='Enviar' />
+                    <p className="result">{result}</p>
                 </form>
+
             </div>
         </div>
     )

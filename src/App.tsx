@@ -23,7 +23,7 @@ function App() {
         </div>
       </div>
       <div className="site-container">
-        <Title subTitle="Skills" title="Minhas Skills" classColor=""></Title>
+        <Title subTitle="Skills" title="Principais Skills" classColor=""></Title>
         <Skills />
       </div>
       <div className="back-black">

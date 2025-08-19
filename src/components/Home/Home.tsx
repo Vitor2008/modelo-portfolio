@@ -32,9 +32,9 @@ const Home = () => {
                 <p className="animate__animated animate__fadeInUp">Explore meu portfólio e projetos para descobrir um universo de design, arte e inovação.
                     Cada trabalho é o resultado de dedicação, criatividade e atenção aos detalhes.</p>
                 <div className="social-media animate__animated animate__fadeInUp">
-                    <a href="https://www.instagram.com/vg.almeida_22/" target="_blank"><FontAwesomeIcon icon={faInstagram} /> </a>
                     <a href="https://www.linkedin.com/in/vitor-almeida-bb7934236/" target="_blank" ><FontAwesomeIcon icon={faLinkedin} /></a>
                     <a href="https://github.com/Vitor2008" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="https://www.instagram.com/vg.almeida_22/" target="_blank"><FontAwesomeIcon icon={faInstagram} /> </a>
                 </div>
                 <Link className='animate__animated animate__fadeInUp' to='contact' smooth={true} offset={-260} duration={500}>
                     <Button text='Baixar Currículo'></Button>
