@@ -47,7 +47,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 15px;
-    /* opacity: 0; */
+    opacity: 0;
     transition: .5s;
 }
 
@@ -64,9 +64,9 @@
     color: #fff;
 }
 
-/* .overlay:hover {
+.overlay:hover {
     opacity: 1;
-} */
+}
 
 .tech {
     margin-top: 20px;
@@ -121,6 +121,7 @@
 }
 
 .example-2 .icon-content a {
+    cursor: default;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -128,7 +129,7 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 20%;
     color: #4d4d4d;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
@@ -138,11 +139,27 @@
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
 
-.example-2 .icon-content a svg {
+.example-2 .icon-content a img {
     position: relative;
     z-index: 1;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.example-2 .icon-content a span {
+    z-index: 1;
+    font-size: 17px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a[data-social="DotNet"] span:hover,
+a[data-social="CSharp"] span:hover {
+    color: #fff;
 }
 
 .example-2 .icon-content a:hover {
@@ -164,23 +181,24 @@
     height: 100%;
 }
 
-.example-2 .icon-content a[data-social="spotify"] .filled,
-.example-2 .icon-content a[data-social="spotify"]~.tooltip {
-    background-color: #1db954;
+.example-2 .icon-content a[data-social="DotNet"] .filled,
+.example-2 .icon-content a[data-social="DotNet"]~.tooltip {
+    background-color: #512bd4;
 }
 
-.example-2 .icon-content a[data-social="pinterest"] .filled,
-.example-2 .icon-content a[data-social="pinterest"]~.tooltip {
-    background-color: #bd081c;
+.example-2 .icon-content a[data-social="CSharp"] .filled,
+.example-2 .icon-content a[data-social="CSharp"]~.tooltip {
+    background-color: #512bd4;
+    ;
 }
 
-.example-2 .icon-content a[data-social="dribbble"] .filled,
-.example-2 .icon-content a[data-social="dribbble"]~.tooltip {
-    background-color: #ea4c89;
+.example-2 .icon-content a[data-social="TypeScrip"] .filled,
+.example-2 .icon-content a[data-social="TypeScrip"]~.tooltip {
+    background-color: #3178C6;
 }
 
-.example-2 .icon-content a[data-social="telegram"] .filled,
-.example-2 .icon-content a[data-social="telegram"]~.tooltip {
+.example-2 .icon-content a[data-social="React"] .filled,
+.example-2 .icon-content a[data-social="React"]~.tooltip {
     background-color: #0088cc;
 }
 
@@ -195,11 +213,6 @@
 .footer-project .button {
     font-size: 12px;
 }
-
-.icon-content img {
-    border-radius: 50%;
-}
-
 
 @media (max-width: 748px) {
     .container-projects {
@@ -222,7 +235,7 @@
         font-size: 12px;
     }
 
-    .footer-project .button{
+    .footer-project .button {
         font-size: 11px;
     }
 

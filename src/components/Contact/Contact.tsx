@@ -3,6 +3,7 @@ import './Contact.css'
 import Button from '../Button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
+import appsettings from '../../../appsettings.json'
 
 const Contact = () => {
 
@@ -14,10 +15,9 @@ const Contact = () => {
         setResult("Enviando....");
         const formData = new FormData(event.currentTarget);
 
-        // formData.append("access_key", `${config.token.webForms}`);
-        formData.append("access_key", '');
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_TOKEN);
 
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const response = await fetch(`${appsettings.api.Web3Forms.submitUrl}`, {
             method: "POST",
             body: formData
         });
@@ -25,7 +25,6 @@ const Contact = () => {
         const data = await response.json();
 
         if (data.success) {
-            console.log("Resetando o formulário...");
             setResult("Enviado com sucesso!");
             formRef.current?.reset();
         } else {
@@ -76,7 +75,7 @@ const Contact = () => {
                         <textarea name='message' rows={5} className="input" placeholder="" required></textarea>
                         <span>Sua Mensagem...</span>
                     </label>
-                    <Button text='Enviar' />
+                    <Button text='Enviar' type='submit' />
                     <p className="result">{result}</p>
                 </form>
 

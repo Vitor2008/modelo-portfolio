@@ -1,4 +1,5 @@
 import './Services.css';
+import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faCartShopping, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button/Button'
@@ -19,7 +20,9 @@ const Services = () => {
             </p>
           </div>
           <div className='card-footer'>
-            <Button text='Saber Mais'></Button>
+            <Link to='contact' smooth={true} offset={-260} duration={500}>
+              <Button text='Saber Mais'></Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -37,7 +40,9 @@ const Services = () => {
             </p>
           </div>
           <div className='card-footer'>
-            <Button text='Saber Mais'></Button>
+            <Link to='contact' smooth={true} offset={-260} duration={500}>
+              <Button text='Saber Mais'></Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -55,7 +60,9 @@ const Services = () => {
             </p>
           </div>
           <div className='card-footer'>
-            <Button text='Saber Mais'></Button>
+            <Link to='contact' smooth={true} offset={-260} duration={500}>
+              <Button text='Saber Mais'></Button>
+            </Link>
           </div>
         </div>
       </div>

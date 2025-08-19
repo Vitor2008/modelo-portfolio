@@ -1,4 +1,5 @@
 import './Footer.css'
+import appsettings from '../../../appsettings.json'
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
             <ul className="social-icons">
                 <li className="social-content">
                     <a
-                        href="https://linkedin.com/"
+                        href={appsettings.Links.Contact.linkedin}
                         aria-label="LinkedIn"
                         data-social="linkedin"
                     >
@@ -30,7 +31,7 @@ const Footer = () => {
                     <div className="tooltip">LinkedIn</div>
                 </li>
                 <li className="social-content">
-                    <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                    <a href={appsettings.Links.Contact.github} aria-label="GitHub" data-social="github">
                         <div className="filled"></div>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,7 @@ const Footer = () => {
                 </li>
                 <li className="social-content">
                     <a
-                        href="https://www.instagram.com/"
+                        href={appsettings.Links.Contact.instagram}
                         aria-label="Instagram"
                         data-social="instagram"
                     >
@@ -77,7 +78,7 @@ const Footer = () => {
                     <a
                         data-social="whatsapp"
                         aria-label="Whatsapp"
-                        href="https://api.whatsapp.com/send?phone=+112067101079&amp;text=Save%20this%20to%20your%20Favorites%20-%20@wilsondesouza"
+                        href={appsettings.Links.Contact.whatsapp}
                     >
                         <div className="filled"></div>
                         <svg
