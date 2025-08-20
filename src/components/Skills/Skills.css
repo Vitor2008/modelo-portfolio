@@ -143,9 +143,17 @@
         gap: 40px;
     }
 
+    .skills-tech{
+       grid-template-columns: repeat(1, 1fr);
+    }
+
     .skills-bars,
     .skill-circe {
         width: 100%;
+    }
+
+    .skill-circe-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

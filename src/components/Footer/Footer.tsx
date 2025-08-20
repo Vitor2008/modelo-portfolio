@@ -11,6 +11,7 @@ const Footer = () => {
                         href={appsettings.Links.Contact.linkedin}
                         aria-label="LinkedIn"
                         data-social="linkedin"
+                        target='_blank'
                     >
                         <div className="filled"></div>
                         <svg
@@ -31,7 +32,7 @@ const Footer = () => {
                     <div className="tooltip">LinkedIn</div>
                 </li>
                 <li className="social-content">
-                    <a href={appsettings.Links.Contact.github} aria-label="GitHub" data-social="github">
+                    <a href={appsettings.Links.Contact.github} aria-label="GitHub" data-social="github" target='_blank'>
                         <div className="filled"></div>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -55,6 +56,7 @@ const Footer = () => {
                         href={appsettings.Links.Contact.instagram}
                         aria-label="Instagram"
                         data-social="instagram"
+                        target='_blank'
                     >
                         <div className="filled"></div>
                         <svg
@@ -78,7 +80,8 @@ const Footer = () => {
                     <a
                         data-social="whatsapp"
                         aria-label="Whatsapp"
-                        href={appsettings.Links.Contact.whatsapp}
+                        href={appsettings.Links.Contact.whatsapp} 
+                        target='_blank'
                     >
                         <div className="filled"></div>
                         <svg
