@@ -58,9 +58,6 @@ const Skills = () => {
   const percentualTecnico = calcularPercentual(tecnicoSkills);
   const percentualComportamental = calcularPercentual(comportamentalSkills);
 
-  console.log("Percentuais Técnicos:", percentualTecnico);
-  console.log("Percentuais Comportamentais:", percentualComportamental);
-
   return (
     <section className='skills'>
       <div className='skills-container'>
@@ -70,6 +67,7 @@ const Skills = () => {
             <h1>Técnica</h1>
           </div>
           <div className='skills-tech'>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={javascript_img} width={30} />
@@ -79,8 +77,8 @@ const Skills = () => {
                 </div>
               </div>
               <ProgressBar skill="JavaScript" percentage={percentualTecnico.javascript} />
-
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={node_img} width={30} />
@@ -91,6 +89,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="Node.js" percentage={percentualTecnico.node} />
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={typescript_img} width={30} />
@@ -101,6 +100,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="TypeScript" percentage={percentualTecnico.typescript} />
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={react_img} width={30} />
@@ -111,6 +111,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="React" percentage={percentualTecnico.react} />
             </div>
+
             <div className='skills-bars-item mobile-top'>
               <div className='info'>
                 <img className='img-logo dotnet' src={dotnet_img} width={30} />
@@ -121,6 +122,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill=".NET" percentage={percentualTecnico.dotnet} />
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={mySql_img} width={30} />
@@ -131,6 +133,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="MySQL" percentage={percentualTecnico.mysql} />
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={postgre_img} width={30} />
@@ -141,6 +144,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="PostgreSQL" percentage={percentualTecnico.postgresql} />
             </div>
+
             <div className='skills-bars-item'>
               <div className='info'>
                 <img className='img-logo' src={sqlServer_img} width={30} />
@@ -151,6 +155,7 @@ const Skills = () => {
               </div>
               <ProgressBar skill="SQLServer" percentage={percentualTecnico.sqlserver} />
             </div>
+
           </div>
         </div>
 

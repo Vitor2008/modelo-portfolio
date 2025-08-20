@@ -80,7 +80,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="img-port site2">
+                <div className="img-port site3">
                     <div className="overlay">
                         <h1 className="title-project">
                             Projeto

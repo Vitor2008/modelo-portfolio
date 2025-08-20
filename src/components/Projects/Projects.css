@@ -31,7 +31,11 @@
 }
 
 .site2 {
-    background-image: url(../../assets/img/projects/imagem2.jpg);
+    background-image: url(../../assets/img/projects/kinksburguer.jpeg);
+}
+
+.site3{
+    background-image: url(../../assets/img/projects/menuone.jpeg);
 }
 
 .overlay {
