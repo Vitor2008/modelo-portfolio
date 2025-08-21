@@ -26,16 +26,28 @@
     background-position: 100% 100%;
 }
 
-.site1 {
+.uselavie {
     background-image: url(../../assets/img/projects/uselavie.jpeg);
 }
 
-.site2 {
+.kinksburguer {
     background-image: url(../../assets/img/projects/kinksburguer.jpeg);
 }
 
-.site3{
+.menuone {
     background-image: url(../../assets/img/projects/menuone.jpeg);
+}
+
+.ecommerce {
+    background-image: url(../../assets/img/projects/ecommerce.jpeg);
+}
+
+.segurancatrabalho {
+    background-image: url(../../assets/img/projects/segurancatrabalho.jpeg);
+}
+
+.edusity {
+    background-image: url(../../assets/img/projects/edusity.jpeg);
 }
 
 .overlay {
