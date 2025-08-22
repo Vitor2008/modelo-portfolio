@@ -17,12 +17,6 @@ O projeto é organizado em componentes reutilizáveis, com foco em performance, 
 - Design responsivo para diferentes dispositivos
 
 
-
-## Layout do Projeto 🖼️
-![Portfólio](./src/assets/img/portfoliovitor.jpeg)
-
-
-
 # :hammer_and_wrench: Tecnologias
 
 - [<img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> React](https://react.dev/)
@@ -36,5 +30,8 @@ O projeto é organizado em componentes reutilizáveis, com foco em performance, 
 - [<img align="center" alt="Git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"> Git](https://www.git.com/)
 - [<img align="center" alt="GitHub" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"> GitHub](https://git-scm.com/)
 
+
+## Layout do Projeto 🖼️
+![Portfólio](./src/assets/img/portfoliovitor.jpeg)
 
 
