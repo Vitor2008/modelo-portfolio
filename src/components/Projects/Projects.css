@@ -26,6 +26,10 @@
     background-position: 100% 100%;
 }
 
+.easedelivery {
+    background-image: url(../../assets/img/projects/easydelivery.jpeg);
+}
+
 .uselavie {
     background-image: url(../../assets/img/projects/uselavie.jpeg);
 }
@@ -49,6 +53,11 @@
 .edusity {
     background-image: url(../../assets/img/projects/edusity.jpeg);
 }
+
+.xadrez {
+    background-image: url(../../assets/img/projects/xadrez-console.PNG);
+}
+
 
 .overlay {
     position: absolute;
@@ -143,11 +152,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 20%;
     color: #4d4d4d;
-    background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -158,8 +166,17 @@
 .example-2 .icon-content a img {
     position: relative;
     z-index: 1;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
+}
+
+.example-2 .icon-content a[data-social="NodeJs"] img,
+.example-2 .icon-content a[data-social="Css"] img,
+.example-2 .icon-content a[data-social="Html"] img,
+.example-2 .icon-content a[data-social="CSharp"] img,
+.example-2 .icon-content a[data-social="MySql"] img {
+    width: 90%;
+    height: 90%;
 }
 
 
@@ -173,8 +190,10 @@
     align-items: center;
 }
 
+
 a[data-social="DotNet"] span:hover,
-a[data-social="CSharp"] span:hover {
+a[data-social="CSharp"] span:hover,
+a[data-social="HTML"] span:hover {
     color: #fff;
 }
 
@@ -197,6 +216,35 @@ a[data-social="CSharp"] span:hover {
     height: 100%;
 }
 
+.example-2 .icon-content a[data-social="NodeJs"] .filled,
+.example-2 .icon-content a[data-social="NodeJs"]~.tooltip {
+    background-color: #68A063;
+}
+
+.example-2 .icon-content a[data-social="Bootstrap"] .filled,
+.example-2 .icon-content a[data-social="Bootstrap"]~.tooltip {
+    background-color: #6f42c1;
+}
+
+.example-2 .icon-content a[data-social="Css"] .filled,
+.example-2 .icon-content a[data-social="Css"]~.tooltip {
+    background-color: #264de4;
+}
+
+
+.example-2 .icon-content a[data-social="Html"] .filled,
+.example-2 .icon-content a[data-social="Html"]~.tooltip {
+    background-color: #E44D26;
+}
+
+
+.example-2 .icon-content a[data-social="JavaScript"] .filled,
+.example-2 .icon-content a[data-social="JavaScript"]~.tooltip {
+    background-color: #F0DB4F;
+    color: black;
+}
+
+
 .example-2 .icon-content a[data-social="DotNet"] .filled,
 .example-2 .icon-content a[data-social="DotNet"]~.tooltip {
     background-color: #512bd4;
@@ -204,8 +252,7 @@ a[data-social="CSharp"] span:hover {
 
 .example-2 .icon-content a[data-social="CSharp"] .filled,
 .example-2 .icon-content a[data-social="CSharp"]~.tooltip {
-    background-color: #512bd4;
-    ;
+    background-color: #68217A;
 }
 
 .example-2 .icon-content a[data-social="TypeScrip"] .filled,
@@ -217,6 +264,28 @@ a[data-social="CSharp"] span:hover {
 .example-2 .icon-content a[data-social="React"]~.tooltip {
     background-color: #0088cc;
 }
+
+.example-2 .icon-content a[data-social="vsCode"] .filled,
+.example-2 .icon-content a[data-social="vsCode"]~.tooltip {
+    background-color: black;
+}
+
+.example-2 .icon-content a[data-social="Vite"] .filled,
+.example-2 .icon-content a[data-social="Vite"]~.tooltip {
+    background-color: #646CFF;
+}
+
+.example-2 .icon-content a[data-social="MySql"] .filled,
+.example-2 .icon-content a[data-social="MySql"]~.tooltip {
+    background-color: #646CFF;
+}
+
+
+.example-2 .icon-content a[data-social="VisualStudio"] .filled,
+.example-2 .icon-content a[data-social="VisualStudio"]~.tooltip {
+    background-color: #AE7FE2;
+}
+
 
 
 .footer-project {
