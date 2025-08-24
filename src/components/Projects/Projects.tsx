@@ -87,7 +87,7 @@ const Projects = () => {
                 <div className="img-port xadrez">
                     <div className="overlay">
                         <h1 className="title-project">
-                            Aplicação Console
+                            Jogo de Xadrez
                         </h1>
                         <p>Aplicação de terminal para simulação de partidas de xadrez,
                             com regras oficiais e movimentação completa das peças.</p>
@@ -455,7 +455,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="img-port edusity">
+                <div className="img-port crud">
                     <div className="overlay">
                         <h1 className="title-project">
                             Crud MVC
@@ -510,8 +510,7 @@ const Projects = () => {
                         </div>
 
                         <div className='footer-project'>
-                            <Button text='Ver projeto'></Button>
-                            <Button text='Ver Repositório'></Button>
+                            <Button text='Ver Repositório' onClick={() => window.open('https://github.com/Vitor2008/sales-web-mvc', '_blank')}></Button>
                         </div>
                     </div>
                 </div>
