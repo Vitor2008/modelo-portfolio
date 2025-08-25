@@ -72,6 +72,23 @@ span {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        margin-bottom: 0;
+        height: 100vh;
+    }
+
+    .home-img {
+        margin-top: 4rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+}
+
+
 @media (max-width: 748px) {
     .home {
         flex-direction: column;

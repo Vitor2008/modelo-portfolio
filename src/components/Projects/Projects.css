@@ -303,6 +303,13 @@ a[data-social="HTML"] span:hover {
     font-size: 12px;
 }
 
+@media (max-width: 1024px) {
+    .container-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
 @media (max-width: 748px) {
     .container-projects {
         grid-template-columns: repeat(1, 1fr);
